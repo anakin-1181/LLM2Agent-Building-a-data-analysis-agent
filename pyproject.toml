@@ -1,0 +1,20 @@
+[project]
+name = "llm2agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Anakin Lai", email = "anakin252lai@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "openai>=2.53.0",
+    "requests>=2.34.2",
+]
+
+[project.scripts]
+llm2agent = "llm2agent.main:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
